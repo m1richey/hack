@@ -29,10 +29,10 @@
     <div id="question-holder"> 
 	<h4>Using Google App Engine</h4>
 	<p>At a hackathon, you want to display your product and show it off at the end.  One great way to do so can be with a website that can be hosted live and viewed by all the judges and everyone in the audience.  One quick and easy way is using GAE.  Below is a tutorial to get your hackathon team up and running ahead of the pack.</p>
-	
 
+    <h3>Get Setup on Google</h3>
     <ol>
-        <li>Go to https://console.developers.google.com/start/appengine and start a new project </li>
+        <li>Go to the <a href="https://console.developers.google.com/start/appengine">Google App Engine Developer Console</a> and start a new project </li>
         <li> Select a name for your project </li>
         <li> Choose a language for the project. Your options are Python, PHP, Java, and Go.  In reality this won’t make a huge difference because you are just hosting a website, but we suggest going with Python or PHP.  The rest of the tutorial assumes you have picked Python. </li>
         <li> You can play with the hello world scripts and run them.  The important things are: </li>
@@ -40,27 +40,29 @@
             <li>app.yaml - this is the most important file that describes your app so that the app engine knows what project it is, what kind of language etc.  The main line you’ll play with is “application: hello-flask-app-engine” - where “hello-flask-app-engine” will be replaced by a unique identifier for your app. </li>    
             <li>main.py - this is where the important functions will be run from and where we will be putting in the request handlers when hosting the website</li>
         </ul>
+    </ol>
+    <h3> Installing the SDK </h3>
+    <ol>
+        <li>Follow the steps on the website!</li>
 
-        <li> Install the SDK </li>
-            <ol> 
-                <li>follow the steps on the website!</li>
-        
-                <li>if you’re using mac or linux, you will need to use the terminal and have curl installed (ubuntu: sudo apt-get install curl)</li>
-                <li> NOTE: ADD SOMETHING ABOUT HOME DIR LOCATION </li>
+        <p>if you’re using mac or linux, you will need to use the terminal and have curl installed (ubuntu: sudo apt-get install curl)</p>
+        <li> NOTE: ADD SOMETHING ABOUT HOME DIR LOCATION </li>
+        <li> Steps in the console </li>
 
-            </ol>
-        <li>Download this sample website.
-            <p>it contains the basic files that we talked about before as well as a simple hello world home page.  This basic webpage was pulled and adapted from this great tutorial http://www.labnol.org/internet/host-website-on-google-app-engine/18801/</p>
-
+        <li>Download this sample <a href="sample-website.zip">website</a>.
+            <p>It contains the basic files that we talked about before as well as a simple hello world home page.  This basic webpage was pulled and adapted from this great <a href="http://www.labnol.org/internet/host-website-on-google-app-engine/18801/">tutorial</a></p>
+    </ol>
+    <h3> Deploying your website</h3>
+    <ol>
         <li>Run and upload the website
             <p> Actually deploy your website! - click on “deploy” and wait while the backend gets setup.  You will get an unique identifier.  For example ours was: mineral-pride-615</p>
-        <h3>Windows</h3>
+        <h2>Windows</h2>
         <ol>
             <li>Open the Google App Engine Launcher program from the Start Menu</li>
             <li>choose File – > Add Existing Application and browse to the folder where you unzipped the website.</li>
         </ol>
 
-        <h3>Linux or Mac</h3>
+        <h2>Linux or Mac</h2>
         <ol>
             <li>(Optional) Test out the local install - this only hosts the files on your own machine </li>
             <ul>
@@ -74,23 +76,28 @@
                 <li>appcfg.py -A mineral-pride-615 update website-sample</li>
                 </ol>
         </ol>
-    <li>Go visit your website! - mineral-pride-618.appspot.com </li>
-    
-    <li>Now go ahead and add more files to website-sample or whatever website you want, just remember you need to have app.yaml, main.py, index.yaml, and robot.txt to the folder if you want to upload and deploy it </li>
+    </ol>
+    <h3>View your website</h3>
+    <ol>
+        <li>Go visit your website!</li>
+        <p>Just take your id and attach it to http://<id>.appspot.com. So for example our website was http://mineral-pride-618.appspot.com </p>
+        
+        <li>Now go ahead and add more files to website-sample or whatever website you want, just remember you need to have app.yaml, main.py, index.yaml, and robot.txt to the folder if you want to upload and deploy it </li>
+    </ol>
+    <h3>Adding your team</h3>
+    <ol>
+        <li>Go to the developer <a href="https://console.developers.google.com">console</a></li>
+        <li>On the left bottom, go to “Permissions”</li>
+        <li>Add your members</li>
+        <li>Have them do the portion of the tutorial where they install the SDK and run the specific command to load the website</li>
+    </ol>
+    <h3>Notes</h3>
+    <ul>
+        <li>If you really want to be a flashy at the hackathon, you can purchase a cheap domain main and point it to the website!</li>
+        <li>For an alternative method to load go visit this <a href="http://www.labnol.org/internet/host-website-on-google-app-engine/18801/">tutorial</a>. 
+    </ul>
     </div></div>
-
-<!--    i. Add your teammates to the project so they can update
-        1) Go to the console:
-        2) On the left bottom, go to “Permissions”
-        3) Add your members
-        4) Have them do step () of the tutorial and they can deploy as well!
-
-    j. If you really want to be a flashy at the hackathon, you can purchase a cheap domain main and point it to the website
-
-This tutorial was adapted from http://www.labnol.org/internet/host-website-on-google-app-engine/18801/
--->
-
-    <div class="footer">TechChics</div>
+<div class="footer">TechChics</div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
