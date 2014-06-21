@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tutorials</title>
+
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/hack101.css" rel="stylesheet">
+  </head>
+  <body>
+    <ul class="nav nav-tabs">
+      <li><a href="index.html"><img src="img/logo.png" style="height: 20px;" /></a></li>
+	  <li><a href="gettingstarted.html">Getting Started</a></li>
+      <li><a href="whattoexpect.html">What To Expect</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="resources.html">Resources</a></li>
+      <li class="active"><a href="tutorials.html">Tutorials</a></li>
+    </ul>
+    <div class="jumbotron">
+      <div class="container">
+        <p style="font-size:50px; text-align: center; padding: 10px;">Tutorials</p>
+      </div>
+    </div> 
+	
+	<h4>Using GitHub</h4>
+	<p>GitHub is used to help project teams easily share files. This tutorial describes how to install git and set up a GitHub account.</p>
+	
+	<h4>Signing Up</h4>
+	<ol>
+		<li>Navigate to github.com.</li>
+		<li>If you already have an account, choose ‘Sign In’ and enter your username and password.</li>
+		<li>If you do not have an account, choose a username and password and enter your email on the homescreen. Then, click ‘Sign Up for GitHub’.</li>
+	</ol>
+	<p>You have now created an account! You will be brought to the homepage, from which you can access tutorials as well as repositories you have created. An outline of these tutorials is provided below.</p>
+	
+	<h4>Creating a Repository</h4>
+	<p>A repository is a location to store shared code. You and your teammates will use this to coordinate each piece of code you edit.</p>
+	<ol>
+		<li>On the right side of the page, choose ‘New Repository’.</li>
+		<li>Enter a name for the repository. Names should be short and easy to remember.</li>
+		<li>Choose who can have access to your repository. Choose public if any GitHub user can view it. Choose private if only teammates you choose can view it.</li>
+		<li>Check the box ‘Initialize this repository with a README. Ensure the dropdown menus are set to ‘None’.</li>
+		<li>Choose ‘Create Repository’.</li>
+	</ol>
+	<p>You have now created a new repository! In the center of the screen, you can view all files stored in the repository. </p>
+	
+	<h4>Creating a New File to Store in the Repository</h4>
+	<p>Once you have a repository set up, you need  a new file to store and edit. </p>
+	<ol>
+		<li>Navigate to the repository page you just created. At the top of the page, it should display <your_username> / <repository_name></li>
+		<li>Choose the ‘+’ symbol next to the repository name in the middle of the page. </li>
+		<li>At the top of the page, name your file. Add the appropriate extension for each type of file (i.e. <file_name.c> for a C language file). </li>
+		<li>Enter the content of your file in the black box in the center of the screen.</li>
+		<li>Once you are done adding content, scroll to the bottom of the page and choose “Commit New File”.</li>
+		<li>Your file will now be displayed in the list of files under the repository. </li>
+	</ol>
+	
+	<h4>Saving the Repository to your Personal Computer</h4>
+	<p>The above tutorials have explained how to add files and edit the repository through the GitHub website, but now we will cover how to save the repository to your personal computer so that you can add pre-existing files. </p>
+	<ol>
+		<li>Ensure that git is installed on your computer. This tutorial will not cover how to install git, but user manuals are provided at the following website: <a href="http://git-scm.com/book/en/Getting-Started-Installing-Git">Installing Git</a></li>
+		<li>Ensure that a command shell and ssh are installed on your computer. This tutorial will not cover how to install these tools, but user manuals are provided at the following website:
+<a href="http://askubuntu.com/questions/243124/how-to-reinstall-terminal">Installing Command Line</a></li>
+		<li>Go to GitHub.com and navigate to your repository page.</li>
+		<li>On the right side of the page, locate the “Clone URL” dialogue box. </li>
+		<li>Under the box, choose the “SSH” option.</li>
+		<li>Copy the URL that appears in the dialogue box to your clipboard.</li>
+		<li>Open your command shell and navigate to the folder in which you want to store the repository.</li>
+		<li>Type ‘git clone <repository_url>’</li>
+		<li>The screen will say “Cloning into <folder>”. This process will take approximately 30 seconds.</li>
+		<li>Ensure that the entire repository has been cloned by navigating into the folder. Check that all files that appear on the GitHub.com repository page are present in the folder.</li>
+	</ol>
+	<p>The repository has been copied to your computer! You are now able to edit and add new content to the repository from your own machine.</p>
+	
+	<h4>Adding an Existing File to the Repository</h4>
+	<p>Now that the repository exists on your personal computer, you can add existing files to the repository webpage.</p>
+	<ol>
+		<li>Copy the file you want to add to the repository into the folder in which you cloned the repository in the steps above.</li>
+		<li>Type ‘git add <file_name>’</li>
+		<li>Type ‘git commit -m “<comment>” <file_name></li>
+		<li>Ensure that the file has been added by navigating to the repository page on GitHub.com and checking that the file listings have uploaded. </li>
+	</ol>
+	<p>The file is now added to the repository, and other repository users can can access your file. </p>
+	<p>These are the basic functions to perform with GitHub. For more detailed documentation and a list of all functions available with GitHub, visit <a href="https://help.github.com/ ">GitHub</a></p>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
