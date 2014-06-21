@@ -125,3 +125,27 @@ h4 {
 h1 {
   font-size: 60px;
 }
+
+.hackathons {
+  border-radius: 150px;
+  width: 200px;
+}
+
+.hc {
+  float: left;
+  width: 40%;
+  margin: 40px;
+}
+
+.hackcontent {
+  text-align: center;
+  margin: 0 20px;
+}
+
+.hc img {
+  float: left;
+}
+
+.hc h4 {
+  font-size: 20px;
+}
