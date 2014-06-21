@@ -171,3 +171,16 @@ h1 {
   width: 90%;
   margin: 0 auto;
 }
+
+.outer {
+  width: 100%;
+}
+
+.inner {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.tut-list li {
+  margin-bottom: 20px;
+}

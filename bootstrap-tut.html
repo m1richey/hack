@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hack 101 - Bootstrap</title>
+
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/hack101.css" rel="stylesheet">
+  </head>
+  <body>
+    <ul class="nav nav-tabs">
+      <li><a href="index.html"><img src="img/logo.png" style="height: 20px;" /></a></li>
+	  <li><a href="gettingstarted.html">Getting Started</a></li>
+      <li><a href="whattoexpect.html">What To Expect</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="resources.html">Resources</a></li>
+      <li class="active"><a href="tutorials.html">Tutorials</a></li>
+    </ul>
+    <div class="jumbotron">
+      <div class="container">
+        <p style="font-size:50px; text-align: center; padding: 10px;">Tutorials</p>
+      </div>
+    </div> 
+	<div class="outer"><div class="inner">
+	<h4>Bootstrap</h4>
+  <p>Bootstrap makes front-end web development faster and easier. It's made for folks of all skill levels, devices of all shapes, and projects of all sizes.</li>
+  <ol class="tut-list">
+    <li>Get familiar with very basic HTML and CSS so you know the structure of building a website.  I personally recommend the <a href="http://www.codecademy.com/tracks/web">codeacademy course</a> if you are not already familiar with this.</li>
+
+    <li> <a href="https://github.com/twbs/bootstrap/releases/download/v3.1.1/bootstrap-3.1.1-dist.zip" target="_blank">Click Here</a> to download Bootstrap. Or visit the Bootstrap website and press <a href="http://getbootstrap.com/getting-started/" target="_blank">Download Bootstrap.</a></li>
+
+  <li> Create a new folder for your project.  Unzip the Bootstrap file you downloaded and copy its contents into your project folder.</li>
+
+  <li> Download the basic Bootstrap template by right-clicking or ctrl-clicking <a href="basic_template.html" target="_blank">HERE</a> and saving the file to your computer in the folder for your project.</li>
+
+  <li> Open the file with a text editor of your choice. Visit the boostrap <a href="http://getbootstrap.com/css/" target="_blank">CSS page</a>, <a href="http://getbootstrap.com/components/" target="_blank">Components</a>, and <a href="http://getbootstrap.com/javascript/" target="_blank">JavaScript</a> page in order to see elements that you can add to your webpage.</a></li>
+
+  <li> Find an element that you want to add to your page, for this example we'll be adding a standard button.  See it on the boostrap website <a href="http://getbootstrap.com/css/#buttons">HERE</a>.</li>
+
+  <li>Copy and paste the given code into the body of your HTML template. <br /> <img src="img/button.png" />  <br /> <br />If you open your page in the browser there should now be a button that says "Default".  <br /><br /> <img src ="img/browser-button.png" /></li>
+
+  <li> Now edit the code to fit you needs.  Let's change the text of the button to say "Click Here". <br /> <img src="img/clickhere.png" /></li>
+
+  <li> Let's also change the color of the button to red. In order to do this we must edit the CSS files that we downloaded with Bootstrap.  Open up the stylesheet that you are using in your HTML file, in this case it is "css/bootstrap.css".  And search for the class that corresponds to the element you are trying to change, in this case "btn-default".  Use the find feature in your text editor as the CSS file is very long.  Once you have found that tag, scroll through the CSS file looking for the attribute that you are trying to change that belongs to that tag, in this case we are looking for "background-color".  Now change the CSS to reflect the change you want to make. <br /> <img src="img/edit-css.png" /></li>
+
+  <li> Reload the page in your browser and it should reflect the changes you made. <br /> <img src="img/red-button.png" /> </li>
+
+<p>You are now ready to start creating webpages using Bootstrap!</p></div></div>
+	
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
