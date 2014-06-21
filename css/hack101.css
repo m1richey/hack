@@ -153,6 +153,7 @@ h1 {
 #intro {
   font-size: 30px;
   padding: 40px;
+  padding-top: 10px;
 }
 
 .question {
