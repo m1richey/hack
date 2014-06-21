@@ -188,13 +188,17 @@ h1 {
 }
 
 .tutorial-logo-content img {
-  display: block;
-  margin: 0 auto;
   width: 200px;
 }
 
 .tutorial-logo-content {
-    text-align: justify;
-    width: 200px;
+  float: left;
+  text-align: center;
+  width: 33%;
+  margin-top: 20px;
+}
+
+.hackcontent {
+  margin-top: 20px;
 }
 
